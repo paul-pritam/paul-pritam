@@ -6,6 +6,16 @@ Focused on the engineering boundary between Linux companion computers running pa
 
 ---
 
+## Engineering Focus & Approach
+
+I build autonomous mobile robot software from the silicon up to multi-robot dispatch consoles. My focus is on systems where timing determinism, memory ownership, and sensor synchronization matter:
+
+- **No black boxes**: When a robot struggles in a narrow doorway, I look at the physical causes: footprint polygon vertices, local costmap update frequencies, and wheel slip covariance rather than masking issues with artificial padding.
+- **Hardware determinism**: Microcontrollers run tight, high-frequency motor loops (100 Hz PID, hardware encoder counters), while companion computers run Linux, ROS 2, and perception. High-speed serial links keep them decoupled and predictable.
+- **Purposeful tooling**: I prefer building lightweight C++20 and Dear ImGui diagnostic tools rather than relying on heavy, monolithic developer dashboards.
+
+---
+
 ## Technical Stack
 
 ### Robotics & Autonomy
